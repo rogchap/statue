@@ -1,0 +1,17 @@
+{
+  "name": "statue",
+  "version": "0.0.7",
+  "description": "Simple web server to serve static pages locally.",
+  "author": "Roger Chapman <rogchap@gmail.com>",
+  "main": "lib/statue.js",
+  "bin": {
+      "statue" : "lib/cli-wrapper.js"
+    },
+  "engines": {
+    "node": "~0.3.7 || 0.4 || 0.5 || 0.6"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "mime": "~1.2.5"
+  }
+}
