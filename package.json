@@ -3,6 +3,7 @@
   "version": "0.0.7",
   "description": "Simple web server to serve static pages locally.",
   "author": "Roger Chapman <rogchap@gmail.com>",
+  "repository": {"url": "https://github.com/rogchap/statue", "type": "git"},
   "main": "lib/statue.js",
   "bin": {
       "statue" : "lib/cli-wrapper.js"
