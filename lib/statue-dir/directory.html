@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title><%= path %></title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/statue-style.css">
+</head>
+<body>
+  <div class="container">
+  	<section id="listings">
+	  	<div class="page-header">
+	    	<h1><i class="icon-cogs"></i> directory for <%= path %></h1>
+  		</div>
+  		<div class="row">
+        <div class="span12">
+  			<table class="table">
+  				<thead>
+  					<tr>
+              <th class="span1"></th>
+              <th>name</th>
+              <th>last Modified</th>
+              <th>size</th>
+            </tr>
+  				</thead>
+          <tbody>
+            <tr>
+              <td><i class="icon-share-alt"></i></td>
+              <td><a href="<%= parentPath %>">parent directory</a></td>
+              <td><%= mtime %></td>
+              <td><%= size %></td>
+            </tr>
+            <% for(var i = 0; i < children.length; i++) { %>
+            <% var file = children[i]; %>
+            <tr>
+              <td><i class="<% if(file.type === 0) {%>icon-folder-open<%} else {%>icon-file<%}%>"></i></td>
+              <td><a href="<%= file.path %>"><%= file.name %></a></td>
+              <td><%= file.mtime %></td>
+              <td><%= file.size %></td>
+            </tr>
+            <% } %>
+          </tbody>	
+  			</table>
+      </div>
+		</div>
+	</section>
+  <footer class="footer">
+    <p class="pull-right"><a href="#">back to top</a></p>
+    <p>statue web server version <%= version %>.</p>
+    <p>created to make development life easier.</p>
+    <p>built by <i class="icon-twitter-sign"></i> <a href="http://twiiter.com/rogchap">@rogchap</a> and available on <i class="icon-github-sign"></i> <a href="https://github.com/rogchap/statue">GitHub</a>
+  </footer>
+  </div>
+</body>
+</html>
