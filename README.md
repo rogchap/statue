@@ -18,13 +18,14 @@ Get this code, install npm, and then do this:
 
 ## Options
 
--h|-?|--help : displays help
--p|--port <portNumber> : port number to listen on
--d|--dir <homeDirectory> : home directory to list from
+	-h|-?|--help : displays help
+	-v|--version : displays statue version number
+	-p|--port <portNumber> : port number to listen on
+	-d|--dir <homeDirectory> : home directory to list from
 
 ## todo
 
-1. ~~file directory listings like apache for easier navigation~~ (>= 0.0.8)
+1. ~~file directory listings like apache for easier navigation~~ (>= 0.1.3)
 2. better styled error pages (404, 500)
 3. options for showing/hiding hidden files
 4. widows support 
