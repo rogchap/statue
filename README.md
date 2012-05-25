@@ -1,22 +1,22 @@
 # statue
 
-Simple web server to serve static pages locally.
+simple web server to serve static pages locally.
 
 ## simple install
 
-Install npm, and then do this:
+install npm, and then do this:
 
     npm install statue -g
 
-You don't even need to download or fork this repo at all.
+you don't even need to download or fork this repo at all.
 
 ## fancy install
 
-Get this code, install npm, and then do this:
+get this code, install npm, and then do this:
 
     npm link
 
-## Options
+## options
 
 	-h|-?|--help : displays help
 	-v|--version : displays statue version number
@@ -28,4 +28,5 @@ Get this code, install npm, and then do this:
 1. ~~file directory listings like apache for easier navigation~~ (>= 0.1.3)
 2. better styled error pages (404, 500)
 3. options for showing/hiding hidden files
-4. widows support 
+4. ~~windows support~~ (>= 0.1.4) 
+5. table sorting support
