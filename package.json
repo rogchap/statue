@@ -1,6 +1,6 @@
 {
   "name": "statue",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple web server to serve static pages locally.",
   "author": "Roger Chapman <rogchap@gmail.com>",
   "repository": {
